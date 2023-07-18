@@ -39,7 +39,7 @@ const exerciseSchema = new mongoose.Schema({
 Exercise =  mongoose.model("Exercise", exerciseSchema);
 
 app.get('/', (req, res) => {
-  res.sendFile(__dirname + '/views/index.html')
+  res.sendFile(__dirname + '/index.html')
 });
 
 app.post('/api/users', async function (req, res) {
